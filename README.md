@@ -1,8 +1,8 @@
-# [Sage](https://roots.io/sage/)
+# [Project-X](https://roots.io/sage/)
 [![Build Status](https://travis-ci.org/roots/sage.svg)](https://travis-ci.org/roots/sage)
 [![devDependency Status](https://david-dm.org/roots/sage/dev-status.svg)](https://david-dm.org/roots/sage#info=devDependencies)
 
-Sage is a WordPress starter theme based on HTML5 Boilerplate, gulp, Bower, and Bootstrap Sass, that will help you make better themes.
+Project-X is a minimal WordPress starter theme based on HTML5 Boilerplate, gulp, npm, and PostCSS that supports both Basscss and Tachyons for smoking fast, composable themes. The purpose of this project is to bring the principles of Functional CSS to the WordPress &#127758;.
 
 * Source: [https://github.com/roots/sage](https://github.com/roots/sage)
 * Homepage: [https://roots.io/sage/](https://roots.io/sage/)
@@ -24,30 +24,17 @@ For more installation notes, refer to the [Install gulp and Bower](#install-gulp
 
 ## Features
 
-* [gulp](http://gulpjs.com/) build script that compiles both Sass and Less, checks for JavaScript errors, optimizes images, and concatenates and minifies files
+* [gulp](http://gulpjs.com/) build script that compiles PostCSS, lints JavaScript, optimizes images, removes unused CSS with UnCSS, and concatenates and minifies files
 * [BrowserSync](http://www.browsersync.io/) for keeping multiple browsers and devices synchronized while testing, along with injecting updated CSS and JS into your browser while you're developing
-* [Bower](http://bower.io/) for front-end package management
+* [npm](http://npmjs.com/) for package management
 * [asset-builder](https://github.com/austinpray/asset-builder) for the JSON file based asset pipeline
-* [Bootstrap](http://getbootstrap.com/)
 * [Theme wrapper](https://roots.io/sage/docs/theme-wrapper/)
 * ARIA roles and microformats
 * Posts use the [hNews](http://microformats.org/wiki/hnews) microformat
 * [Multilingual ready](https://roots.io/wpml/) and over 30 available [community translations](https://github.com/roots/sage-translations)
 
-Install the [Soil](https://github.com/roots/soil) plugin to enable additional features:
-
-* Cleaner output of `wp_head` and enqueued assets
-* Cleaner HTML output of navigation menus
-* Root relative URLs
-* Nice search (`/search/query/`)
-* Google CDN jQuery snippet from [HTML5 Boilerplate](http://html5boilerplate.com/)
-* Google Analytics snippet from [HTML5 Boilerplate](http://html5boilerplate.com/)
-
-See a complete working example in the [roots-example-project.com repo](https://github.com/roots/roots-example-project.com).
-
 ## Theme installation
 
-Bottom line is you want to get the files in this repo into your local development environment. There are many ways to do this, two of which we will cover here.
 
 ### via Command-line
 
@@ -79,17 +66,16 @@ Edit `lib/setup.php` to enable or disable theme features, setup navigation menus
 
 ## Theme development
 
-Sage uses [gulp](http://gulpjs.com/) as its build system and [Bower](http://bower.io/) to manage front-end packages.
+Sage uses [gulp](http://gulpjs.com/) as its build system and [npm](http://npmjs.com/) to manage front-end packages.
 
-### Install gulp and Bower
+### Install gulp 
 
 Building the theme requires [node.js](http://nodejs.org/download/). We recommend you update to the latest version of npm: `npm install -g npm@latest`.
 
 From the command line:
 
-1. Install [gulp](http://gulpjs.com) and [Bower](http://bower.io/) globally with `npm install -g gulp bower`
+1. Install [gulp](http://gulpjs.com) globally with `npm install -g gulp`
 2. Navigate to the theme directory, then run `npm install`
-3. Run `bower install`
 
 You now have all the necessary dependencies to run the build process.
 
@@ -134,6 +120,3 @@ Keep track of development and community news.
 
 * Participate on the [Roots Discourse](https://discourse.roots.io/)
 * Follow [@rootswp on Twitter](https://twitter.com/rootswp)
-* Read and subscribe to the [Roots Blog](https://roots.io/blog/)
-* Subscribe to the [Roots Newsletter](https://roots.io/subscribe/)
-* Listen to the [Roots Radio podcast](https://roots.io/podcast/)
