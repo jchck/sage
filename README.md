@@ -1,8 +1,8 @@
-# [Project-X](https://github.com/jchck/project-x)
+# [Thyme](https://github.com/jchck/Thyme)
 [![Build Status](https://travis-ci.org/roots/sage.svg)](https://travis-ci.org/roots/sage)
 [![devDependency Status](https://david-dm.org/roots/sage/dev-status.svg)](https://david-dm.org/roots/sage#info=devDependencies)
 
-Project-X is a minimal [Sage-based](https://github.com/roots/sage) WordPress starter theme based on HTML5 Boilerplate, gulp, npm, and PostCSS that supports both [Basscss](https://github.com/basscss/basscss) and [Tachyons](https://github.com/tachyons-css/tachyons) for smoking fast, composable themes. The purpose of this project is to bring the principles of Functional CSS to the WordPress &#127758;.
+Thyme is a minimal [Sage-based](https://github.com/roots/sage) WordPress starter theme built with HTML5 Boilerplate, gulp, npm, and PostCSS that supports both [Basscss](https://github.com/basscss/basscss) and [Tachyons](https://github.com/tachyons-css/tachyons) for smoking fast, composable themes. The purpose of this project is to bring the principles of Functional CSS to the WordPress &#127758;.
 
 
 ## Requirements
@@ -11,7 +11,6 @@ Project-X is a minimal [Sage-based](https://github.com/roots/sage) WordPress sta
 * Node.js 0.12.x 
 * gulp >= 3.8.10  
 
-For more installation notes, refer to the [Install gulp and Bower](#install-gulp-and-bower) section in this document.
 
 ## Features
 
@@ -29,7 +28,7 @@ For more installation notes, refer to the [Install gulp and Bower](#install-gulp
 
 ### via WordPress Admin Panel
 
-1. [Download the latest release](https://github.com/jchck/project-x) of Project-X.
+1. [Download the latest release](https://github.com/jchck/project-x) of Thyme.
 2. In your WordPress admin panel, navigate to Appearance->Themes
 3. Click Add New
 4. Click Upload Theme
@@ -41,7 +40,7 @@ Edit `lib/setup.php` to enable or disable theme features, setup navigation menus
 
 ## Theme development
 
-Project-X uses [gulp](http://gulpjs.com/) as its build system and [npm](http://npmjs.com/) to manage front-end packages.
+Thyme uses [gulp](http://gulpjs.com/) as its build system and [npm](http://npmjs.com/) to manage front-end packages.
 
 ### Install gulp 
 
