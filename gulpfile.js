@@ -50,7 +50,7 @@ gulp.task('css', function() {
 
    .pipe(size({gzip: true, showFiles: true, title: 'Processed & gZipped!'}))
 
-   .pipe(gulp.dest('./dest/css'))
+   .pipe(gulp.dest('./dist/styles'))
 
    .pipe(browserSync.stream());
 });
