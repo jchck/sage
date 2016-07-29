@@ -1,14 +1,10 @@
 /*Search form*/
 .search-form {
-  /*@extend .form-inline;*/
 }
 .search-form label {
-  /*@extend .form-group;*/
 }
 .search-form .search-field {
-  /*@extend .form-control;*/
 }
 .search-form .search-submit {
-  /*@extend .btn;
-  @extend .btn-default;*/
+  
 }
