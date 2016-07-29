@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/roots/sage.svg)](https://travis-ci.org/roots/sage)
 [![devDependency Status](https://david-dm.org/roots/sage/dev-status.svg)](https://david-dm.org/roots/sage#info=devDependencies)
 
-Thyme is a minimal [Sage-based](https://github.com/roots/sage) WordPress starter theme built with HTML5 Boilerplate, gulp, npm, and PostCSS that supports both [Basscss](https://github.com/basscss/basscss) and [Tachyons](https://github.com/tachyons-css/tachyons) for smoking fast, composable themes. The purpose of this project is to bring the principles of Functional CSS to the WordPress &#127758;.
+Thyme is a minimal [Sage-based](https://github.com/roots/sage) WordPress starter theme built with HTML5 Boilerplate, gulp, npm, and PostCSS that supports [Tachyons](https://github.com/tachyons-css/tachyons) for smoking fast, composable themes. The purpose of this project is to bring the principles of Functional CSS to the WordPress &#127758;.
 
 
 ## Requirements
