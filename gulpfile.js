@@ -58,11 +58,6 @@ gulp.task('css', function() {
 // js processing task
 gulp.task('js', function() {
   gulp.src([
-    './bower_components/slick-carousel/slick/slick.js',
-    './bower_components/bootstrap/js/transition.js',
-    './bower_components/bootstrap/js/collapse.js',
-    './bower_components/bootstrap/js/dropdown.js',
-    './src/js/_map.js',
     './src/js/main.js'
   ])
   .pipe(concat('all.js'))
