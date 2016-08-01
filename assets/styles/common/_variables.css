@@ -1,0 +1,6 @@
+:root{
+/*Font path*/
+  --icon-font-path: "../fonts/";
+/*Colors*/
+  --brand-primary: #27ae60;
+}
