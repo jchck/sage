@@ -17,6 +17,10 @@
       "url": "http://opensource.org/licenses/MIT"
     }
   ],
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">=2.1.5"
+  },
   "devDependencies": {
     "autoprefixer": "^6.3.1",
     "browser-sync": "^2.12.5",
