@@ -45,7 +45,7 @@ var postcssPlugins    =   [
 // css processing task
 gulp.task('css', function() {
   gulp.src('./assets/styles/main.css')
-   
+
    .pipe(postcss(postcssPlugins))
 
    .pipe(size({gzip: true, showFiles: true, title: 'Processed & gZipped!'}))
@@ -58,11 +58,11 @@ gulp.task('css', function() {
 // js processing task
 gulp.task('js', function() {
   gulp.src([
-    './src/js/main.js'
+    'assets/scripts/main.js'
   ])
-  .pipe(concat('all.js'))
+  .pipe(concat('main.js'))
   .pipe(uglify())
-  .pipe(gulp.dest('./dest/js'))
+  .pipe(gulp.dest('./dist/scripts'))
 });
 
 // image processing task
@@ -71,7 +71,7 @@ gulp.task('pics', function(){
     .pipe(imagemin({
         verbose: true
     }))
-    .pipe(gulp.dest('./dest/img/'));
+    .pipe(gulp.dest('./dist/img/'));
 });
 
 // Initialize browser-sync which starts a static server also allows for
@@ -82,10 +82,10 @@ gulp.task('watch', function() {
         // Be sure you start your dev server at the root of your Grav install
         proxy: devUrl,
 
-        // Template files to watch 
+        // Template files to watch
         files: [
           '*.html',
-          'src/js/main.js'
+          'assets/scripts/main.js'
         ]
     });
 
@@ -98,9 +98,7 @@ gulp.task('watch', function() {
  * Default task
  *
  */
-gulp.task('default', ['css', 'watch'], function(){
-  gulp.start('css', 'pics');
-  gulp.watch('src/css/**.css', ['css']);
-  gulp.watch('src/img/**.*', ['pics']);
+gulp.task('default', ['css', 'js', 'watch'], function(){
+  gulp.start('css', 'js', 'pics');
   gulp.watch('*.html', browserReload);
 });
