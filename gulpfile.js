@@ -45,7 +45,7 @@ var postcssPlugins    =   [
 // css processing task
 gulp.task('css', function() {
   gulp.src('./assets/styles/main.css')
-   
+
    .pipe(postcss(postcssPlugins))
 
    .pipe(size({gzip: true, showFiles: true, title: 'Processed & gZipped!'}))
@@ -82,7 +82,7 @@ gulp.task('watch', function() {
         // Be sure you start your dev server at the root of your Grav install
         proxy: devUrl,
 
-        // Template files to watch 
+        // Template files to watch
         files: [
           '*.html',
           'src/js/main.js'
@@ -90,7 +90,7 @@ gulp.task('watch', function() {
     });
 
     // CSS files to watch
-    gulp.watch(['./src/css/**.css'], ['css']);
+    gulp.watch(['assets/styles/**.css'], ['css']);
 });
 
 /**
@@ -100,7 +100,7 @@ gulp.task('watch', function() {
  */
 gulp.task('default', ['css', 'watch'], function(){
   gulp.start('css', 'pics');
-  gulp.watch('src/css/**.css', ['css']);
+  gulp.watch('assets/styles/**.css', ['css']);
   gulp.watch('src/img/**.*', ['pics']);
   gulp.watch('*.html', browserReload);
 });
